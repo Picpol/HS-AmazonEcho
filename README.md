@@ -17,3 +17,6 @@ Was wird ausser der hier bereitgestellten Software sonst noch benötigt:
 * Dynamic DNS über MyFritz!, DynDns ...
 * Port-Forwarding
 
+...
+
+Installation und Konfiguration siehe Wiki
