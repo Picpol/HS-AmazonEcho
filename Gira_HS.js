@@ -1,9 +1,10 @@
+var REMOTE_CLOUD_BASE_PATH = '/';
+var REMOTE_CLOUD_HOSTNAME = '[DYNDNS]'; // Dynamic DNS Hostname ohne http/https z.B.: alexa.meinDomainName.de
+var REMOTE_CLOUD_PORT = [PORTXXXXX] ; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
+var ACCESS_TOKEN = '[TOKEN]' // zu verwendendes Access Token, gleicher String-Wert wie im Logikbaustein Eingang 3
 
 var https = require('https');
-var REMOTE_CLOUD_BASE_PATH = '/';
-var REMOTE_CLOUD_HOSTNAME = 'TODO'; // Dynamic DNS Hostname ohne http/https z.B.: alexa.meinDomainName.de
-var REMOTE_CLOUD_PORT = TODO; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
-var ACCESS_TOKEN = 'TODO ' // zu verwendendes Access Token, gleicher String-Wert wie im Logikbaustein Eingang 3
+
 	/**
 	 * Main entry point.
 	 * Incoming events from Smart Home API are processed via this method.
