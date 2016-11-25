@@ -1,0 +1,61 @@
+# -*- coding: iso8859-1 -*-
+## -----------------------------------------------------
+## Amazon Echo (10013)   ### V0.1
+##
+## -----------------------------------------------------
+## Copyright � 2016, Werner Lindb�chl, All rights reserved.
+##
+## This program is free software; you can redistribute it and/or modify it under the terms
+## of the GNU General Public License as published by the Free Software Foundation; either
+## version 3 of the License, or (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+## without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+## See the GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License along with this program;
+## if not, see <http://www.gnu.de/documents/gpl-3.0.de.html>.
+
+## -- 
+## --  
+
+#5000|"Text"|Remanent(1/0)|Anz.Eing�nge|.n.|Anzahl Ausg�nge|.n.|.n.
+5000|"#WJL\Amazon Echo (10013)_V0.1"|0|3|"E1 Https-Server Start/Stop"|"E2 Https-Server Port"|"E3 Access Token"|1|"A1 Systemlog"|"V0.1"
+
+#5001|Anzahl Eing�nge|Ausg�nge|Offset|Speicher|Berechnung bei Start
+5001|3|1|1|1|1
+
+# Eingaenge
+#5002|Index Eingang|Default Wert|0=numerisch 1=alphanummerisch
+5002|1|0|0	#* E1 Https-Server Start/Stop 
+5002|2|0|0	#* E2 Https-Server Port 
+5002|3|0|1	#* E3 Access Token 
+
+# Speicher
+#5003|Speicher|Initwert|Remanent
+5003|1||0		  #* Klassenspeicher 
+
+# Ausgaenge
+#5004|ausgang|Initwert|runden bin�r (0/1)|typ (1-send/2-sbc)|0=numerisch 1=alphanummerisch
+5004|1|""|0|1|1 
+
+#################################################
+
+### Klasse AmazonEcho
+################################
+## Quelltext nicht �ffentlich ##
+################################
+
+
+
+
+## Klasse auf SN1 
+5012|1|"EI"|"1"|"10"|0|1|0|0
+5012|0|"OC[1]"|"AmazonEcho(locals())"|""|0|0|1|0
+
+#5012|abbruch bei bed. (0/1)|bedingung|formel|zeit|pin-ausgang|pin-offset|pin-speicher|pin-neg.ausgang
+5012|0|"(OC[1] or EC[1]) and EN[1]"|"SN[1].start()"|""|0|0|0|0
+5012|0|"EC[1] and not EN[1]"|"SN[1].stop()"|""|0|0|0|0
+
+
+
