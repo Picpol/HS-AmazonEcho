@@ -1,6 +1,6 @@
 var REMOTE_CLOUD_BASE_PATH = '/';
 var REMOTE_CLOUD_HOSTNAME = '[DYNDNS]'; // Dynamic DNS Hostname ohne http/https z.B.: alexa.meinDomainName.de
-var REMOTE_CLOUD_PORT = [PORTXXXXX] ; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
+var REMOTE_CLOUD_PORT = [PORT] ; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
 var ACCESS_TOKEN = '[TOKEN]' // zu verwendendes Access Token, gleicher String-Wert wie im Logikbaustein Eingang 3
 
 var https = require('https');
