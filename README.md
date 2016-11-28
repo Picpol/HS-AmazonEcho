@@ -13,7 +13,7 @@ Voraussetzungen:
 * Port-Weiterleitung im Internet-Router
 * Amazon Konto
 * Amazon Developer Konto
-* Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden)
+* Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden, siehe https://github.com/Picpol/HS-AmazonEcho/wiki)
 
 
 
