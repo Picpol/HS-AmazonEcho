@@ -16,5 +16,6 @@ Voraussetzungen:
 * Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden, siehe auch Hinweise zum AWS-Konto unter https://github.com/Picpol/HS-AmazonEcho/wiki)
 
 
+Zur Einrichtung des Amazon Dienste PDF-Anleitung verwenden. (Wiki-Version ist noch nicht "up to date")
 
 weitere Informationen siehe https://github.com/Picpol/HS-AmazonEcho/wiki
