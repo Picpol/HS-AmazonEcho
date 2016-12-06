@@ -16,8 +16,9 @@ Voraussetzungen:
 * Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden, siehe auch Hinweise zum AWS-Konto unter https://github.com/Picpol/HS-AmazonEcho/wiki)
 
 
+**Achtung: Der Baustein hat jetzt die offizielle Bausteinnummer 13626 bekommen, welche hiermit die Bausteinnummer 10013 ersetzt.** 
 **Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung verwenden.** (Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)  
-**Hinweis: Der Baustein hat jetzt die offizielle Bausteinnummer 13626 bekommen, welche hiermit die Bausteinnummer 10013 ersetzt.**
+
 
 
 weitere Informationen siehe https://github.com/Picpol/HS-AmazonEcho/wiki
