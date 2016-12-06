@@ -16,6 +16,14 @@ Voraussetzungen:
 * Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden, siehe auch Hinweise zum AWS-Konto unter https://github.com/Picpol/HS-AmazonEcho/wiki)
 
 
-Zur Einrichtung des Amazon Dienste PDF-Anleitung verwenden. (Wiki-Version ist noch nicht "up to date")
+#Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung verwenden. 
+(Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)
 
 weitere Informationen siehe https://github.com/Picpol/HS-AmazonEcho/wiki
+
+Ausblick auf die Version 0.2:
+* Temperature Control Messages
+* Verbesserung der Robustheit bei Fehlern
+* Log-Ausgaben
+
+
