@@ -23,7 +23,7 @@ weitere Informationen siehe https://github.com/Picpol/HS-AmazonEcho/wiki
 
 Ausblick auf die Version 0.2:
 * Temperature Control Messages
-* Verbesserung der Robustheit bei Fehlern
+* Verbesserung der Robustheit im Fehlerfall
 * Log-Ausgaben
 
 
