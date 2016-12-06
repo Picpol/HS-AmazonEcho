@@ -17,11 +17,8 @@ Voraussetzungen:
 
 
 **Achtung: Der Baustein hat jetzt die offizielle Bausteinnummer 13626 bekommen, welche hiermit die Bausteinnummer 10013 ersetzt.** 
-**Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung verwenden.** (Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)  
-
-
-
-weitere Informationen siehe https://github.com/Picpol/HS-AmazonEcho/wiki
+**Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung https://github.com/Picpol/HS-AmazonEcho/blob/master/Einrichtung%20eines%20Amazon%20Account%20f%C3%BCr%20Nutzung%20eines%20Echos%20oder%20Dots%20_V2.1.pdf verwenden.**  
+(Hinweis: Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)  
 
 Ausblick auf die Version 0.2:
 * Temperature Control Messages
