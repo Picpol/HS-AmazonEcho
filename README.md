@@ -6,7 +6,7 @@ Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter Logikbaustei
 In der aktuellen Implementierung V0.1 wurden über die Smart Home Skill API, die "Discovery Messages", "On/Off Messages" und die "Percentage Messages" umgesetzt.
 
 Voraussetzungen:
-* Gira Homeserver (getestet mit Firmware 4.4)
+* Gira Homeserver (getestet mit Firmware 4.4 und 4.5)
 * Amazon Echo/Echo Dot
 * Self Signed SSL-Certificate
 * Dynamic DNS über MyFritz!, DynDns ...
