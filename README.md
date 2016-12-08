@@ -20,6 +20,9 @@ Voraussetzungen:
 **Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung https://github.com/Picpol/HS-AmazonEcho/blob/master/Einrichtung%20eines%20Amazon%20Account%20f%C3%BCr%20Nutzung%20eines%20Echos%20oder%20Dots%20_V2.1.pdf verwenden.**  
 (Hinweis: Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)  
 
+** Download des Bausteins über  die URL
+https://raw.githubusercontent.com/Picpol/HS-AmazonEcho/master/13626_Amazon%20Echo%20(13626)_V0.1.hsl**
+
 Ausblick auf die Version 0.2:
 * Temperature Control Messages
 * Verbesserung der Robustheit im Fehlerfall
