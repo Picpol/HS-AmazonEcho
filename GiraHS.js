@@ -38,13 +38,17 @@ function handleControl(event, context) {
 
 	var applianceId = event.payload.appliance.applianceId;
 	var request = event.header.name;
-	var query = '&applianceId=' + applianceId + '&request=' + event.header.name;
+	var query = '&applianceId=' + encodeURIComponent(applianceId) + '&request=' + event.header.name;
 
 	if (request == "SetPercentageRequest") {
 		query += '&value=' + event.payload.percentageState.value;
 	} else if (request == "IncrementPercentageRequest" || request == "DecrementPercentageRequest") {
 		query += '&value=' + event.payload.deltaPercentage.value;
-	}
+	} else if (request == "SetTargetTemperatureRequest") {
+		query += '&value=' + event.payload.targetTemperature.value;
+  } else if (request == "IncrementTargetTemperatureRequest" || request == "DecrementTargetTemperatureRequest") {
+    query += '&value=' + event.payload.targetTemperature.value;
+  }
 
 	handle(event, context, "control", query);
 }
