@@ -1,7 +1,10 @@
-var REMOTE_CLOUD_BASE_PATH = '/';
+// Hinweis: Die nachfolgenden 3 Platzhalter [DYNDNS], [PORT] und [TOKEN] müssen durch die korrekten eigenen Werte
+// ersetzt werden. Die eckigen Klammern sind Teil des Platzhalters und müssen mit ersetzt werden!
+
 var REMOTE_CLOUD_HOSTNAME = '[DYNDNS]'; // Dynamic DNS Hostname ohne http/https z.B.: alexa.meinDomainName.de
-var REMOTE_CLOUD_PORT = [PORT] ; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
-var ACCESS_TOKEN = '[TOKEN]' // zu verwendendes Access Token, gleicher String-Wert wie im Logikbaustein Eingang 3
+var REMOTE_CLOUD_PORT = [PORT]; // zu verwendender Port (> 1024), gleicher Int-Wert wie im Logikbaustein Eingang 2
+var ACCESS_TOKEN = '[TOKEN]'; // zu verwendendes Access Token, gleicher String-Wert wie im Logikbaustein Eingang 3
+var REMOTE_CLOUD_BASE_PATH = '/';
 
 var https = require('https');
 
