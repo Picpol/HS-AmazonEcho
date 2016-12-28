@@ -23,11 +23,10 @@ Voraussetzungen:
 **Download des Bausteins über `rechte Maustaste -> Ziel speichern unter ...` der nachfolgenden URL**  
 https://raw.githubusercontent.com/Picpol/HS-AmazonEcho/master/13626_Amazon%20Echo%20(13626)_V0.2.hsl
 
-Ausblick auf die Version 0.3:
-zusätzliche Anbindung eines Custom Skill um auch Werte des KNX-Bus abzufragen.
-z.B.:
-Welche Temperatur hast das Wohnzimmer?
-Ist das Licht im Büro eingeschaltet?
-Welche Temperatur hat das Wasser im Pool?
-Ist das Fenster im Büro geschlossen?
+Ausblick auf die V0.3:  
+zusätzliche Anbindung eines Custom Skill um auch Werte des KNX-Bus abzufragen. z.B.:
+* Welche Temperatur hast das Wohnzimmer?
+* Ist das Licht im Büro eingeschaltet?
+* Welche Temperatur hat das Wasser im Pool?
+* Ist das Fenster im Büro geschlossen?
 
