@@ -6,7 +6,7 @@ Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter Logikbaustei
 In der aktuellen Implementierung V0.2 wurden über die Smart Home Skill API, die "Discovery Messages", "On/Off Messages", "Percentage Messages" und die "Temperature Control Messages" umgesetzt.
 
 Voraussetzungen:
-* Gira Homeserver (getestet mit Firmware 4.4 und 4.5)
+* Gira Homeserver (getestet mit Firmware 4.2, 4.4 und 4.5)
 * Amazon Echo/Echo Dot
 * Self Signed SSL-Certificate
 * Dynamic DNS über MyFritz!, DynDns ...
@@ -15,10 +15,8 @@ Voraussetzungen:
 * Amazon Developer Konto
 * Amazon Webservice Konto (Hinweis: für die Registrierung am AWS müssen Kreditkarteninformationen eingegeben werden, siehe auch Hinweise zum AWS-Konto unter https://github.com/Picpol/HS-AmazonEcho/wiki)
 
-
-**Achtung: Der Baustein hat jetzt die offizielle Bausteinnummer 13626 bekommen, welche hiermit die Bausteinnummer 10013 ersetzt.** 
 **Zur Einrichtung der Amazon Dienste bitte die PDF-Anleitung https://github.com/Picpol/HS-AmazonEcho/blob/master/Einrichtung%20eines%20Amazon%20Account%20f%C3%BCr%20Nutzung%20eines%20Echos%20oder%20Dots%20_V2.1.pdf verwenden.**  
-(Hinweis: Wiki-Version ist noch unvollständig und evtl. fehlerhaft.)  
+(Hinweis: Die Wiki-Version ist in diesem Bereich evtl. noch unvollständig.)  
 
 **Download des Bausteins über `rechte Maustaste -> Ziel speichern unter ...` der nachfolgenden URL**  
 https://raw.githubusercontent.com/Picpol/HS-AmazonEcho/master/13626_Amazon%20Echo%20(13626)_V0.2.hsl
