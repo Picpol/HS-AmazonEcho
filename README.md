@@ -26,9 +26,12 @@ weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 
 Änderungen von V0.2 auf V0.3:
 * zusätzliche Möglichkeit über den Custom-Skill Werte vom KNX-Bus abzufragen
+* in der JSON-Konfiguration können jetzt Javascript-Kommentare verwendet werden
 * statt der Angabe des "onOff" Attributes, kann jetzt ein "on" und/oder "off" Attribut verwendet werden um eine 1-Bit KNX-Gruppenadresse anzugeben. Damit kann man festlegen, ob ein Gerät mit dem jeweiligem Sprachkommando nur ein oder ausgeschaltet werden darf.
-* die maximale Länge Bytes (Zeichen) der JSON Konfiguration ist jetzt 50.000 - war vorher 10.000
-* ...
+* die maximale Länge Bytes (Zeichen) der JSON Konfiguration ist jetzt 50.000 - bislang nur 10.000
+* "Favicon-Requests" der Browser werden nicht mehr als unautorisierte Zugriffe gezählt
+* im Log wird für die Set-Percentage und Set-Temperature Requestes auch der gesendete Wert ausgegeben
+* kleinere Fehlerbehebungen und Verbesserungen
 
 Änderungen von V0.1 auf V0.2:
 
