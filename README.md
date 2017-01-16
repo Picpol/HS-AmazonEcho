@@ -24,7 +24,7 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 
 weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 
-Änderungen von V0.2 auf V0.3:
+**Änderungen von V0.2 auf V0.3**:
 * zusätzliche Möglichkeit über den Custom-Skill Werte vom KNX-Bus abzufragen
 * in der JSON-Konfiguration können jetzt Javascript-Kommentare verwendet werden
 * statt der Angabe des "onOff" Attributes, kann jetzt ein "on" und/oder "off" Attribut verwendet werden um eine 1-Bit KNX-Gruppenadresse anzugeben. Damit kann man festlegen, ob ein Gerät mit dem jeweiligem Sprachkommando nur ein oder ausgeschaltet werden darf.
@@ -33,8 +33,7 @@ weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 * im Log wird für die Set-Percentage und Set-Temperature Requestes auch der gesendete Wert ausgegeben
 * kleinere Fehlerbehebungen und Verbesserungen
 
-Änderungen von V0.1 auf V0.2:
-
+**Änderungen von V0.1 auf V0.2**:
 * Unterstützung der "Temperature Control Messages" des Amazon "Smart Home Skill API "
   D.h. auf Raumebene kann optional mit dem Schlüsselwort "targetTemperature":"X/Y/Z" eine KNX Gruppenadresse für die   Solltemperaturvorgabe des Raumes angegeben werden
 * auf Raumebene und Geräteebene kann optional mit dem Schlüsselwort "id": die Appliance-ID vorgegeben werden. Der ID darf nur aus Buchstaben und Ziffern bestehen, da Alexa sonst damit nicht klarkommt. Für die Aliasenamen wird zusätzlich automatische eine laufende Nummer angehängt.
@@ -46,8 +45,7 @@ weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 * das erste Gerät in der Appliance-Liste wird nicht mehr unter dem Raumnamen an Alexa gemeldet.
 * das optionale Schlüsselwort "value" zur Vorgabe des Einschaltwertes wurde umbenannt in "onValue"
 
-Zum Update von V0.1 auf V0.2: muss man sowohl die GiraHS.js als auch den Logikbaustein updaten.
-Die Ein- und Ausgänge des Bausteins haben sich allerdings geändert:
-
+  Zum Update von V0.1 auf V0.2: muss man sowohl die GiraHS.js als auch den Logikbaustein updaten.
+  Die Ein- und Ausgänge des Bausteins haben sich allerdings geändert:
 * zwei zusätzliche Eingänge zur Steuerung der Log-Ausgabe (am besten erstmal Default-Werte verwenden) der bisherige Textausgang A1 (Systemlog) entfällt und muss durch einen Zählerausgang ersetzt werden.
 * Dieser protokolliert die Anzahl der Zugriffe ohne gültiges Access Token.
