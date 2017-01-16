@@ -1,5 +1,5 @@
 # GiraHS-AmazonEcho
-**Achtung: Verwendung erfolgt auf eigenes Risiko!  
+**Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
 **!!!Beim Update des Logikbausteins von Version V0.2 auf V0.3 geht die JSON-Gerätekonfiguration im Gira Homeserver verloren und muss deshalb im Anschluß neu "hochgeladen" werden!!!**
 
