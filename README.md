@@ -6,7 +6,7 @@ Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter Logikbaustei
 In der aktuellen Implementierung V0.3 wurden über die Smart Home Skill API, die "Discovery Messages", "On/Off Messages", "Percentage Messages" und die "Temperature Control Messages" umgesetzt. Zusätzlich kann man optional den in diesem "Softwarepaket" enthaltenen Custom Skill anbinden, mit welchem auch Abfragen auf den KNX Bus möglich sind. 
 
 Voraussetzungen:
-* Gira Homeserver (getestet mit Firmware 4.2, 4.4 und 4.5)
+* Gira Homeserver (Firmware 4.2, 4.4 und 4.5)
 * Amazon Echo/Echo Dot
 * Self Signed SSL-Certificate
 * Dynamic DNS über MyFritz!, DynDns ...
