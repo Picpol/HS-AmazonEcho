@@ -1,5 +1,7 @@
 # GiraHS-AmazonEcho
-**Achtung: Verwendung erfolgt auf eigenes Risiko! Beim Update des Logikbausteins von Version V0.2 auf V0.3 geht die JSON-Gerätekonfiguration im Gira Homeserver verloren und muss deshalb im Anschluß neu "hochgeladen" werden**
+**Achtung: Verwendung erfolgt auf eigenes Risiko!  
+
+**!!!Beim Update des Logikbausteins von Version V0.2 auf V0.3 geht die JSON-Gerätekonfiguration im Gira Homeserver verloren und muss deshalb im Anschluß neu "hochgeladen" werden!!!**
 
 Ziel dieses Projekts ist die Anbindung von **Amazon-Echo (Alexa)** über den **Gira Homeserver an den KNX Bus** zur Gebäudeautomation.
 Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter **Logikbaustein** und eine dazugehörige **AWS (Amazon Web Service) Lambda-Function**.  
