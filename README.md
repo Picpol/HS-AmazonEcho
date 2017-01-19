@@ -13,7 +13,7 @@ Die Anbindung erfolgt hierbei über
 Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzulegendes Aktivierungswort gestartet werden.
 
 **Voraussetzungen**:
-* Gira Homeserver (Firmware 4.2, 4.4 und 4.5)
+* Gira Homeserver (Firmware >= 4.2)
 * Amazon Echo/Echo Dot
 * Self Signed SSL-Certificate
 * Dynamic DNS über MyFritz!, DynDns ...
