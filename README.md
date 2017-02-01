@@ -22,6 +22,8 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 * Amazon Developer Konto
 * Amazon Webservice Konto  
 
+Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.
+
 weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 
 **Änderungen von V0.2 auf V0.3**:
