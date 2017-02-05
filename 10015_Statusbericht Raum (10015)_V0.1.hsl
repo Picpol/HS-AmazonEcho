@@ -1,0 +1,356 @@
+# -*- coding: iso8859-1 -*-
+## -----------------------------------------------------
+## Statusbericht Raum (10015)   ### V0.1
+##
+## erstellt am: 2017-01-21 06:10
+## -----------------------------------------------------
+## Copyright © 2016, Werner Lindbüchl, All rights reserved.
+##
+## This program is free software; you can redistribute it and/or modify it under the terms
+## of the GNU General Public License as published by the Free Software Foundation; either
+## version 3 of the License, or (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+## without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+## See the GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License along with this program;
+## if not, see <http://www.gnu.de/documents/gpl-3.0.de.html>.
+
+## -- 
+## --  
+
+#5000|"Text"|Remanent(1/0)|Anz.Eingänge|.n.|Anzahl Ausgänge|.n.|.n.
+5000|"Weitere Bausteine\Statusbericht Raum (10015)_V0.1"|0|8|"E1 Raumname"|"E2 RTR-Status"|"E3 Solltemperatur"|"E4 Isttemperatur"|"E5 Licht Status an/aus?"|"E6 Anz. Lichter an"|"E7 Anz. Fenster offen"|"E8 Anz. Türen offen"|1|"A1 Gesamt"|"V0.1"
+
+#5001|Anzahl Eingänge|Ausgänge|Offset|Speicher|Berechnung bei Start
+# 8 Eingänge, 1 Ausgänge, 0 Timer, 0 Speicher, Berechnung bei Initialisierung 
+5001|8|1|0|1|1    
+
+#5002|Index Eingang|Default Wert|0=numerisch 1=alphanummerisch
+5002|1|""|1          # Eingang  1, Raumname
+5002|2|""|0          # Eingang  2, RTR-Status
+5002|3|""|0          # Eingang  3, Solltemperatur
+5002|4|""|0          # Eingang  4, Isttemperatur
+5002|5|""|0          # Eingang  5, Licht Status
+5002|6|""|0          # Eingang  6, Anz. Lichter an
+5002|7|""|0          # Eingang  7, Anz. Fenster offen
+5002|8|""|0          # Eingang  8, Anz. Türen offen
+
+#5003|Speicher|Initwert|Remanent
+5003|1||0           # Klasse 
+
+#5004|ausgang|Initwert|runden binär (0/1)|typ (1-send/2-sbc)|0=numerisch 1=alphanummerisch
+5004|1|""|0|1|1      # Ausgang 1, Gesamt
+
+#################################################
+
+5012|0|"EI"|"eval(compile(__import__('base64').decodestring('CmlmIEVJPT0xOgogIGNsYXNzIFN0YXR1c2JlcmljaHRSYXVtOgogICAgSFMgPSBUcnVlCiAgICBMT0dfTEVWRUwgPSAwCiAgICBQQVRIX0JBU0UgPSBOb25lCiAgICBkZWYgX19pbml0X18oc2VsZiwgbG9jYWxzKToKICAgICAgc2VsZi5sb2NhbHMgPSBsb2NhbHM7CiAgICAgIHNlbGYubG9naWsgPSBsb2NhbHNbJ3BJdGVtJ10KICAgICAgc2VsZi5NQyA9IHNlbGYubG9naWsuTUMKICAgICAgc2VsZi5BTiA9IGxvY2Fsc1snQU4nXQogICAgICBzZWxmLkVuID0gc2VsZi5Fbihsb2NhbHNbJ0VOJ10sIHNlbGYpCiAgICAgIGlmIHNlbGYuSFM6CiAgICAgICAgc2VsZi5QQVRIX0JBU0UgPSAiL3RtcC8iCiAgICAgIGVsc2U6CiAgICAgICAgc2VsZi5QQVRIX0JBU0UgPSAiIgogICAgICBpZiBzZWxmLkxPR19MRVZFTCA+IDA6CiAgICAgICAgc2VsZi5sb2dGaWxlID0gb3BlbihzZWxmLlBBVEhfQkFTRSArICIxMDAxNS5sb2ciLCAiYSsiKQogICAgICAgIHNlbGYubG9nRmlsZS5zZWVrKDApCiAgICAgICAgc2VsZi5sb2coJ1YwLjEgdm9tIDIxLjAxLjIwMTcgMDY6MTAnKQogICAgICBzZWxmLmJ1aWxkU3RhdHVzVGV4dGUoKQogICAgTVNHID0gewogICAgICB1IlBSRUZJWCI6IlN0YXR1c2JlcmljaHQgenVtIFJhdW0gezB9IiwKICAgICAgdSJSVFJfU1RBVFVTIjoiUmVnbGVyc3RhdHVzIHswfSIsCiAgICAgIHUiUlRSXzEiOiJLb21mb3J0IiwKICAgICAgdSJSVFJfMiI6Ik5hY2h0IiwKICAgICAgdSJSVFJfMyI6IlN0YW5kYnkiLAogICAgICB1IlJUUl80IjoiRnJvc3RzY2h1dHoiLAogICAgICB1IlNPTExURU1QRVJBVFVSIjoiU29sbHRlbXBlcmF0dXIgezA6MC4xZn0gR3JhZCIsCiAgICAgIHUiSVNUVEVNUEVSQVRVUiI6ImFrdHVlbGxlIFRlbXBlcmF0dXIgezA6MC4xZn0gR3JhZCIsCiAgICAgIHUiTElDSFRfU1RBVFVTIjoiZGFzIExpY2h0IGlzdCB7MH0iLAogICAgICB1IkxJQ0hUXzAiOiJhdXNnZXNjaGFsdGV0IiwKICAgICAgdSJMSUNIVF8xIjoiZWluZ2VzY2hhbHRldCIsCiAgICAgIHUiMF9MSUNIVEVSX0FOIjoiYWxsZSBMaWNodGVyIHNpbmQgYXVzZ2VzY2hhbHRldCIgLAogICAgICB1IjFfTElDSFRFUl9BTiI6ImVpbiBMaWNodCBpc3QgZWluZ2VzY2hhbHRldCIgLAogICAgICB1IlhfTElDSFRFUl9BTiI6InswOjAuMGZ9IExpY2h0ZXIgc2luZCBlaW5nZXNjaGFsdGV0IiAsCiAgICAgIHUiQUxMRV9UVUVSRU5fRkVOU1RFUl9aVSI6ImFsbGUgVPxyZW4gdW5kIEZlbnN0ZXIgc2luZCBnZXNjaGxvc3NlbiIsCiAgICAgIHUiMF9UVUVSRU5fT0ZGRU4iOiJhbGxlIFT8cmVuIHNpbmQgZ2VzY2hsb3NzZW4iLAogICAgICB1IjFfVFVFUkVOX09GRkVOIjoiZWluZSBU/HIgaXN0IG9mZmVuIiwKICAgICAgdSJYX1RVRVJFTl9PRkZFTiI6InswOjAuMGZ9IFT8cmVuIHNpbmQgb2ZmZW4iLAogICAgICB1IjBfRkVOU1RFUl9PRkZFTiI6ImFsbGUgRmVuc3RlciBzaW5kIGdlc2NobG9zc2VuIiwKICAgICAgdSIxX0ZFTlNURVJfT0ZGRU4iOiJlaW4gRmVuc3RlciBpc3Qgb2ZmZW4iLAogICAgICB1IlhfRkVOU1RFUl9PRkZFTiI6InswOjAuMGZ9IEZlbnN0ZXIgc2luZCBvZmZlbiIsCiAgICB9CiAgICBkZWYgYnVpbGRTdGF0dXNUZXh0ZShzZWxmKToKICAgICAgRW4gPSBzZWxmLkVuCiAgICAgIE1TRyA9IHNlbGYuTVNHCiAgICAgIHJ0clN0YXR1c01zZyA9IE5vbmUgICAgICAgIAogICAgICB2YWx1ZSA9IEVuLmdldFJ0clN0YXR1cygpOwogICAgICBpZiB2YWx1ZSBpcyBub3QgTm9uZToKICAgICAgICB2YWx1ZSA9IE1TRy5nZXQoIlJUUl8iICsgInswOjAuMGZ9Ii5mb3JtYXQodmFsdWUpKQogICAgICAgIGlmIHZhbHVlIGlzIG5vdCBOb25lOgogICAgICAgICAgcnRyU3RhdHVzTXNnID0gTVNHWyJSVFJfU1RBVFVTIl0uZm9ybWF0KHZhbHVlKQogICAgICBzb2xsdGVtcGVyYXR1ck1zZyA9IE5vbmUKICAgICAgdmFsdWUgPSBFbi5nZXRTb2xsdGVtcGVyYXR1cigpOwogICAgICBpZiB2YWx1ZSBpcyBub3QgTm9uZToKICAgICAgICBzb2xsdGVtcGVyYXR1ck1zZyA9IHNlbGYuYnVpbGRXZXJ0VGV4dCgiU09MTFRFTVBFUkFUVVIiLCB2YWx1ZSkKICAgICAgaXN0dGVtcGVyYXR1ck1zZyA9IE5vbmUKICAgICAgdmFsdWUgPSBFbi5nZXRJc3R0ZW1wZXJhdHVyKCk7CiAgICAgIGlmIHZhbHVlIGlzIG5vdCBOb25lOgogICAgICAgIGlzdHRlbXBlcmF0dXJNc2cgPSBzZWxmLmJ1aWxkV2VydFRleHQoIklTVFRFTVBFUkFUVVIiLCB2YWx1ZSkKICAgICAgbGljaHRTdGF0dXNNc2cgPSBOb25lCiAgICAgIHZhbHVlID0gRW4uZ2V0TGljaHRTdGF0dXMoKQogICAgICBpZiB2YWx1ZSBpcyBub3QgTm9uZToKICAgICAgICB2YWx1ZSA9IE1TRy5nZXQoIkxJQ0hUXyIgKyAiezA6MC4wZn0iLmZvcm1hdCh2YWx1ZSkpCiAgICAgICAgaWYgdmFsdWUgaXMgbm90IE5vbmU6CiAgICAgICAgICBsaWNodFN0YXR1c01zZyA9IE1TR1siTElDSFRfU1RBVFVTIl0uZm9ybWF0KHZhbHVlKQogICAgICBhbnpMaWNodGVyQW5Nc2cgPSBOb25lCiAgICAgIHZhbHVlID0gRW4uZ2V0QW56TGljaHRlckFuKCkKICAgICAgaWYgdmFsdWUgaXMgbm90IE5vbmU6CiAgICAgICAgaWYgdmFsdWUgPiAwOgogICAgICAgICAgaWYgdmFsdWUgPT0gMToKICAgICAgICAgICAgYW56TGljaHRlckFuTXNnID0gTVNHWyIxX0xJQ0hURVJfQU4iXQogICAgICAgICAgZWxzZToKICAgICAgICAgICAgYW56TGljaHRlckFuTXNnID0gTVNHWyJYX0xJQ0hURVJfQU4iXS5mb3JtYXQodmFsdWUpCiAgICAgICAgZWxzZToKICAgICAgICAgIGFuekxpY2h0ZXJBbk1zZyA9IE1TR1siMF9MSUNIVEVSX0FOIl0KICAgICAgYW56VHVlcmVuT2ZmZW5Nc2cgPSBOb25lCiAgICAgIHZhbHVlID0gRW4uZ2V0QW56VHVlcmVuT2ZmZW4oKQogICAgICBpZiB2YWx1ZSBpcyBub3QgTm9uZToKICAgICAgICBpZiB2YWx1ZSA+IDA6CiAgICAgICAgICBpZiB2YWx1ZSA9PSAxOgogICAgICAgICAgICBhbnpUdWVyZW5PZmZlbk1zZyA9IE1TR1siMV9UVUVSRU5fT0ZGRU4iXQogICAgICAgICAgZWxzZToKICAgICAgICAgICAgYW56VHVlcmVuT2ZmZW5Nc2cgPSBNU0dbIlhfVFVFUkVOX09GRkVOIl0uZm9ybWF0KHZhbHVlKQogICAgICAgIGVsc2U6CiAgICAgICAgICBhbnpUdWVyZW5PZmZlbk1zZyA9IE1TR1siMF9UVUVSRU5fT0ZGRU4iXQogICAgICBhbnpGZW5zdGVyT2ZmZW5Nc2cgPSBOb25lCiAgICAgIHZhbHVlID0gRW4uZ2V0QW56RmVuc3Rlck9mZmVuKCkKICAgICAgaWYgdmFsdWUgaXMgbm90IE5vbmU6CiAgICAgICAgaWYgdmFsdWUgPiAwOgogICAgICAgICAgaWYgdmFsdWUgPT0gMToKICAgICAgICAgICAgYW56RmVuc3Rlck9mZmVuTXNnID0gTVNHWyIxX0ZFTlNURVJfT0ZGRU4iXQogICAgICAgICAgZWxzZToKICAgICAgICAgICAgYW56RmVuc3Rlck9mZmVuTXNnID0gTVNHWyJYX0ZFTlNURVJfT0ZGRU4iXS5mb3JtYXQodmFsdWUpCiAgICAgICAgZWxzZToKICAgICAgICAgIGFuekZlbnN0ZXJPZmZlbk1zZyA9IE1TR1siMF9GRU5TVEVSX09GRkVOIl0KICAgICAgYWxsZVR1ZXJlbkZlbnN0ZXJadSA9IEZhbHNlCiAgICAgIGlmIChhbnpGZW5zdGVyT2ZmZW5Nc2cgaXMgbm90IE5vbmUgYW5kIGFuelR1ZXJlbk9mZmVuTXNnIGlzIG5vdCBOb25lIGFuZAogICAgICAgICAgYW56RmVuc3Rlck9mZmVuTXNnID09IE1TR1siMF9GRU5TVEVSX09GRkVOIl0gYW5kIGFuelR1ZXJlbk9mZmVuTXNnID09IE1TR1siMF9UVUVSRU5fT0ZGRU4iXSk6CiAgICAgICAgYWxsZVR1ZXJlbkZlbnN0ZXJadSA9IFRydWUKICAgICAgZ2VzYW10TXNnID0gTVNHWyJQUkVGSVgiXS5mb3JtYXQoRW4uZ2V0UmF1bW5hbWUoKSkKICAgICAgaWYgcnRyU3RhdHVzTXNnIGlzIG5vdCBOb25lOgogICAgICAgIGdlc2FtdE1zZyArPSAiLCAiICsgcnRyU3RhdHVzTXNnCiAgICAgIGlmIHNvbGx0ZW1wZXJhdHVyTXNnIGlzIG5vdCBOb25lOgogICAgICAgIGdlc2FtdE1zZyArPSAiLCAiICsgc29sbHRlbXBlcmF0dXJNc2cKICAgICAgaWYgaXN0dGVtcGVyYXR1ck1zZyBpcyBub3QgTm9uZToKICAgICAgICBnZXNhbXRNc2cgKz0gIiwgIiArIGlzdHRlbXBlcmF0dXJNc2cKICAgICAgaWYgYW56TGljaHRlckFuTXNnIGlzIG5vdCBOb25lOgogICAgICAgIGdlc2FtdE1zZyArPSAiLCAiICsgYW56TGljaHRlckFuTXNnCiAgICAgIGVsaWYgbGljaHRTdGF0dXNNc2cgaXMgbm90IE5vbmU6CiAgICAgICAgZ2VzYW10TXNnICs9ICIsICIgKyBsaWNodFN0YXR1c01zZwogICAgICBpZiBub3QgYWxsZVR1ZXJlbkZlbnN0ZXJadToKICAgICAgICBpZiBhbnpGZW5zdGVyT2ZmZW5Nc2cgaXMgbm90IE5vbmU6CiAgICAgICAgICBnZXNhbXRNc2cgKz0gIiwgIiArIGFuekZlbnN0ZXJPZmZlbk1zZwogICAgICAgIGlmIGFuelR1ZXJlbk9mZmVuTXNnIGlzIG5vdCBOb25lOgogICAgICAgICAgZ2VzYW10TXNnICs9ICIsICIgKyBhbnpUdWVyZW5PZmZlbk1zZwogICAgICBlbHNlOgogICAgICAgIGdlc2FtdE1zZyArPSAiLCAiICsgTVNHWyJBTExFX1RVRVJFTl9GRU5TVEVSX1pVIl0KICAgICAgaWYgZ2VzYW10TXNnICE9IHNlbGYuQU5bMV06CiAgICAgICAgc2VsZi5zZW5kVG9PdXRwdXQoMSwgZ2VzYW10TXNnKQogICAgZGVmIGJ1aWxkV2VydFRleHQoc2VsZiwgbXNnTmFtZSwgdmFsdWUpOgogICAgICBtc2cgPSBzZWxmLk1TR1ttc2dOYW1lXS5mb3JtYXQodmFsdWUpCiAgICAgIHJldHVybiBtc2cucmVwbGFjZSgnLicsICcsJyk7CiAgICBkZWYgaW5mbyhzZWxmLCBtc2csICpwYXJhbXMpOgogICAgICBpZiBzZWxmLkxPR19MRVZFTCA+PSAxOgogICAgICAgIHNlbGYuX2xvZygiSU5GTyAiLCBtc2csICpwYXJhbXMpCiAgICBkZWYgZGVidWcoc2VsZiwgbXNnLCAqcGFyYW1zKToKICAgICAgaWYgc2VsZi5MT0dfTEVWRUwgPj0gMjoKICAgICAgICBzZWxmLl9sb2coIkRFQlVHIiwgbXNnLCAqcGFyYW1zKQogICAgZGVmIGxvZyhzZWxmLCBtc2csICpwYXJhbXMpOgogICAgICBzZWxmLl9sb2coIlNZUyAgIiwgbXNnLCAqcGFyYW1zKQogICAgZGVmIF9sb2coc2VsZiwgcHJlZml4LCBtc2csICpwYXJhbXMpOgogICAgICBpbXBvcnQgdGltZQogICAgICB0aW1lc3RhbXAgPSB0aW1lLnN0cmZ0aW1lKCIlWS0lbS0lZCAlSDolTTolUyIpCiAgICAgIGlmIHBhcmFtcyBpcyBub3QgTm9uZSBhbmQgbGVuKHBhcmFtcykgPiAwOgogICAgICAgIG1zZyA9IG1zZy5mb3JtYXQoKnBhcmFtcykKICAgICAgbXNnID0gdGltZXN0YW1wICsgIiB8ICIgKyBwcmVmaXggKyAiIHwgIiArIHNlbGYuRW4uZ2V0UmF1bW5hbWUoKSArICIgfCAiICsgbXNnICsgJ1xuJwogICAgICBzZWxmLmxvZ0ZpbGUud3JpdGUobXNnKQogICAgICBzZWxmLmxvZ0ZpbGUuZmx1c2goKQogICAgZGVmIHNlbmRUb091dHB1dChzZWxmLCBvdXQsIHZhbHVlKToKICAgICAgc2VsZi5BTltvdXRdID0gdmFsdWUKICAgICAgc2VsZi5kZWJ1ZygiIyMgc2VuZFRvT3V0cHV0OiAiICsgc3RyKG91dCkgKyAiID0gJyIgKyBzdHIodmFsdWUpICsgIiciKQogICAgICBvdXQgLT0gMSAjIyBJbnRlcm4gc3RhcnRlbiBkaWUgQXVzZ+RuZ2UgYmVpIDAgdW5kIG5pY2h0IGJlaSAxCiAgICAgIGlmIHNlbGYubG9naWsuU2VuZEludGVydmFsbCA9PSAwIG9yIHRpbWUudGltZSgpID49IHNlbGYubG9naWsuQXVzZ2FuZ1tvdXRdWzBdOgogICAgICAgIGZvciBpa28gaW4gc2VsZi5sb2dpay5BdXNnYW5nW291dF1bMV06CiAgICAgICAgICBzZWxmLmxvZ2lrLk1DLlRhZ0xpc3Quc2V0V2VydChGTEFHX0VJQl9MT0dJSywgaWtvLCB2YWx1ZSkKICAgICAgICBpZiB2YWx1ZToKICAgICAgICAgIGZvciBjbWQgaW4gc2VsZi5sb2dpay5BdXNnYW5nW291dF1bMl06CiAgICAgICAgICAgIGNtZC5leGVjQmVmZWhsKCkKICAgICAgICBmb3IgY29uIGluIHNlbGYubG9naWsuQXVzZ2FuZ1tvdXRdWzNdOgogICAgICAgICAgc2VsZi5sb2dpay5NQy5Mb2dpa0xpc3QuQ29ubmVjdExpc3QuYXBwZW5kKGNvbiArIFsgdmFsdWUgXSkKICAgICAgICBpZiBzZWxmLmxvZ2lrLlNlbmRJbnRlcnZhbGwgPiAwOgogICAgICAgICAgc2VsZi5sb2dpay5BdXNnYW5nW291dF1bMF0gPSB0aW1lLnRpbWUoKSArIHNlbGYubG9naWsuU2VuZEludGVydmFsbAogICAgICAgIHNlbGYubG9naWsuT3V0V2VydFtvdXRdID0gdmFsdWUKICAgIGNsYXNzIEVuOgogICAgICBkZWYgX19pbml0X18oc2VsZiwgRU4sIG1haW5DbGFzcyk6CiAgICAgICAgc2VsZi5FTiA9IEVOCiAgICAgICAgc2VsZi5tYWluQ2xhc3MgPSBtYWluQ2xhc3MKICAgICAgZGVmIHJldHVybk5vbmVJZkVtcHR5U3RyaW5nKHNlbGYsIHZhbHVlKToKICAgICAgICBpZiB2YWx1ZSAhPSAiIjoKICAgICAgICAgIHJldHVybiB2YWx1ZQogICAgICAgIGVsc2U6CiAgICAgICAgICByZXR1cm4gTm9uZQogICAgICBkZWYgZ2V0UmF1bW5hbWUoc2VsZik6CiAgICAgICAgcmV0dXJuIHNlbGYuRU5bMV0KICAgICAgZGVmIHNldFJhdW1uYW1lKHNlbGYsIHZhbHVlKToKICAgICAgICBzZWxmLm1haW5DbGFzcy5kZWJ1ZygiKysgc2V0UmF1bW5hbWUodmFsdWU9J3swfScpIiwgdmFsdWUpCiAgICAgICAgc2VsZi5FTlsxXSA9IHZhbHVlCiAgICAgIGRlZiBnZXRSdHJTdGF0dXMoc2VsZik6CiAgICAgICAgcmV0dXJuIHNlbGYucmV0dXJuTm9uZUlmRW1wdHlTdHJpbmcoc2VsZi5FTlsyXSkKICAgICAgZGVmIHNldFJ0clN0YXR1cyhzZWxmLCB2YWx1ZSk6CiAgICAgICAgc2VsZi5tYWluQ2xhc3MuZGVidWcoIisrIHNldFJ0clN0YXR1cyh2YWx1ZT0nezB9JykiLCB2YWx1ZSkKICAgICAgICBzZWxmLkVOWzJdID0gdmFsdWUKICAgICAgZGVmIGdldFNvbGx0ZW1wZXJhdHVyKHNlbGYpOgogICAgICAgIHJldHVybiBzZWxmLnJldHVybk5vbmVJZkVtcHR5U3RyaW5nKHNlbGYuRU5bM10pCiAgICAgIGRlZiBzZXRTb2xsdGVtcGVyYXR1cihzZWxmLCB2YWx1ZSk6CiAgICAgICAgc2VsZi5tYWluQ2xhc3MuZGVidWcoIisrIHNldFNvbGx0ZW1wZXJhdHVyKHZhbHVlPSd7MH0nKSIsIHZhbHVlKQogICAgICAgIHNlbGYuRU5bM10gPSB2YWx1ZQogICAgICBkZWYgZ2V0SXN0dGVtcGVyYXR1cihzZWxmKToKICAgICAgICByZXR1cm4gc2VsZi5yZXR1cm5Ob25lSWZFbXB0eVN0cmluZyhzZWxmLkVOWzRdKQogICAgICBkZWYgc2V0SXN0dGVtcGVyYXR1cihzZWxmLCB2YWx1ZSk6CiAgICAgICAgc2VsZi5tYWluQ2xhc3MuZGVidWcoIisrIHNldElzdHRlbXBlcmF0dXIodmFsdWU9J3swfScpIiwgdmFsdWUpCiAgICAgICAgc2VsZi5FTls0XSA9IHZhbHVlCiAgICAgIGRlZiBnZXRMaWNodFN0YXR1cyhzZWxmKToKICAgICAgICByZXR1cm4gc2VsZi5yZXR1cm5Ob25lSWZFbXB0eVN0cmluZyhzZWxmLkVOWzVdKQogICAgICBkZWYgc2V0TGljaHRTdGF0dXMoc2VsZiwgdmFsdWUpOgogICAgICAgIHNlbGYubWFpbkNsYXNzLmRlYnVnKCIrKyBzZXRMaWNodFN0YXR1cyh2YWx1ZT0nezB9JykiLCB2YWx1ZSkKICAgICAgICBzZWxmLkVOWzVdID0gdmFsdWUKICAgICAgZGVmIGdldEFuekxpY2h0ZXJBbihzZWxmKToKICAgICAgICByZXR1cm4gc2VsZi5yZXR1cm5Ob25lSWZFbXB0eVN0cmluZyhzZWxmLkVOWzZdKQogICAgICBkZWYgc2V0QW56TGljaHRlckFuKHNlbGYsIHZhbHVlKToKICAgICAgICBzZWxmLm1haW5DbGFzcy5kZWJ1ZygiKysgc2V0QW56TGljaHRlckFuKHZhbHVlPSd7MH0nKSIsIHZhbHVlKQogICAgICAgIHNlbGYuRU5bNl0gPSB2YWx1ZQogICAgICBkZWYgZ2V0QW56RmVuc3Rlck9mZmVuKHNlbGYpOgogICAgICAgIHJldHVybiBzZWxmLnJldHVybk5vbmVJZkVtcHR5U3RyaW5nKHNlbGYuRU5bN10pCiAgICAgIGRlZiBzZXRBbnpGZW5zdGVyT2ZmZW4oc2VsZiwgdmFsdWUpOgogICAgICAgIHNlbGYubWFpbkNsYXNzLmRlYnVnKCIrKyBzZXRBbnpUdWVyZW5PZmZlbih2YWx1ZT0nezB9JykiLCB2YWx1ZSkKICAgICAgICBzZWxmLkVOWzddID0gdmFsdWUKICAgICAgZGVmIGdldEFuelR1ZXJlbk9mZmVuKHNlbGYpOgogICAgICAgIHJldHVybiBzZWxmLnJldHVybk5vbmVJZkVtcHR5U3RyaW5nKHNlbGYuRU5bOF0pCiAgICAgIGRlZiBzZXRBbnpUdWVyZW5PZmZlbihzZWxmLCB2YWx1ZSk6CiAgICAgICAgc2VsZi5tYWluQ2xhc3MuZGVidWcoIisrIHNldEFuelR1ZXJlbk9mZmVuKHZhbHVlPSd7MH0nKSIsIHZhbHVlKQogICAgICAgIHNlbGYuRU5bOF0gPSB2YWx1ZQo='),'<10015_Statusbericht Raum (10015)>','exec'))"|""|0|0|0|0
+## MD5 der Formelzeile: 6488079a8a857cbed7b8375e73580c6c
+##########################
+###### Quelltext: ########
+##########################
+#### Klasse StatusberichtRaum
+##if EI==1:
+##
+##  class StatusberichtRaum:
+##    HS = True
+##    LOG_LEVEL = 0
+##    PATH_BASE = None
+##    
+##### INIT
+##    def __init__(self, locals):
+##      self.locals = locals;
+##      self.logik = locals['pItem']
+##      self.MC = self.logik.MC
+##
+##      self.AN = locals['AN']
+##      self.En = self.En(locals['EN'], self)
+##
+##      if self.HS:
+##        self.PATH_BASE = "/tmp/"
+##      else:
+##        self.PATH_BASE = ""
+##      
+##      if self.LOG_LEVEL > 0:
+##        self.logFile = open(self.PATH_BASE + "10015.log", "a+")
+##        self.logFile.seek(0)
+##        self.log('V0.1 vom 21.01.2017 06:10')
+##        
+##      self.buildStatusTexte()
+##        
+##    MSG = {
+##      u"PREFIX":"Statusbericht zum Raum {0}",
+##      u"RTR_STATUS":"Reglerstatus {0}",
+##      u"RTR_1":"Komfort",
+##      u"RTR_2":"Nacht",
+##      u"RTR_3":"Standby",
+##      u"RTR_4":"Frostschutz",
+##      u"SOLLTEMPERATUR":"Solltemperatur {0:0.1f} Grad",
+##      u"ISTTEMPERATUR":"aktuelle Temperatur {0:0.1f} Grad",
+##      
+##      u"LICHT_STATUS":"das Licht ist {0}",
+##      u"LICHT_0":"ausgeschaltet",
+##      u"LICHT_1":"eingeschaltet",
+##      
+##      u"0_LICHTER_AN":"alle Lichter sind ausgeschaltet" ,
+##      u"1_LICHTER_AN":"ein Licht ist eingeschaltet" ,
+##      u"X_LICHTER_AN":"{0:0.0f} Lichter sind eingeschaltet" ,
+##      
+##      u"ALLE_TUEREN_FENSTER_ZU":"alle Türen und Fenster sind geschlossen",
+##      u"0_TUEREN_OFFEN":"alle Türen sind geschlossen",
+##      u"1_TUEREN_OFFEN":"eine Tür ist offen",
+##      u"X_TUEREN_OFFEN":"{0:0.0f} Türen sind offen",
+##      
+##      u"0_FENSTER_OFFEN":"alle Fenster sind geschlossen",
+##      u"1_FENSTER_OFFEN":"ein Fenster ist offen",
+##      u"X_FENSTER_OFFEN":"{0:0.0f} Fenster sind offen",
+##    }
+##
+##    def buildStatusTexte(self):
+##      En = self.En
+##      MSG = self.MSG
+##
+##      # Heizung
+##      rtrStatusMsg = None        
+##      value = En.getRtrStatus();
+##      if value is not None:
+##        value = MSG.get("RTR_" + "{0:0.0f}".format(value))
+##        if value is not None:
+##          rtrStatusMsg = MSG["RTR_STATUS"].format(value)
+##
+##      solltemperaturMsg = None
+##      value = En.getSolltemperatur();
+##      if value is not None:
+##        solltemperaturMsg = self.buildWertText("SOLLTEMPERATUR", value)
+##
+##      isttemperaturMsg = None
+##      value = En.getIsttemperatur();
+##      if value is not None:
+##        isttemperaturMsg = self.buildWertText("ISTTEMPERATUR", value)
+##
+##      # Licht
+##      lichtStatusMsg = None
+##      value = En.getLichtStatus()
+##      if value is not None:
+##        value = MSG.get("LICHT_" + "{0:0.0f}".format(value))
+##        if value is not None:
+##          lichtStatusMsg = MSG["LICHT_STATUS"].format(value)
+##
+##      anzLichterAnMsg = None
+##      value = En.getAnzLichterAn()
+##      if value is not None:
+##        if value > 0:
+##          if value == 1:
+##            anzLichterAnMsg = MSG["1_LICHTER_AN"]
+##          else:
+##            anzLichterAnMsg = MSG["X_LICHTER_AN"].format(value)
+##        else:
+##          anzLichterAnMsg = MSG["0_LICHTER_AN"]
+##
+##      # Türen
+##      anzTuerenOffenMsg = None
+##      value = En.getAnzTuerenOffen()
+##      if value is not None:
+##        if value > 0:
+##          if value == 1:
+##            anzTuerenOffenMsg = MSG["1_TUEREN_OFFEN"]
+##          else:
+##            anzTuerenOffenMsg = MSG["X_TUEREN_OFFEN"].format(value)
+##        else:
+##          anzTuerenOffenMsg = MSG["0_TUEREN_OFFEN"]
+##
+##      # Fenster
+##      anzFensterOffenMsg = None
+##      value = En.getAnzFensterOffen()
+##      if value is not None:
+##        if value > 0:
+##          if value == 1:
+##            anzFensterOffenMsg = MSG["1_FENSTER_OFFEN"]
+##          else:
+##            anzFensterOffenMsg = MSG["X_FENSTER_OFFEN"].format(value)
+##        else:
+##          anzFensterOffenMsg = MSG["0_FENSTER_OFFEN"]
+##
+##      # Tür und Fensterstatus zusammenfassen
+##      alleTuerenFensterZu = False
+##      if (anzFensterOffenMsg is not None and anzTuerenOffenMsg is not None and
+##          anzFensterOffenMsg == MSG["0_FENSTER_OFFEN"] and anzTuerenOffenMsg == MSG["0_TUEREN_OFFEN"]):
+##        alleTuerenFensterZu = True
+##      
+##      ###
+##      ### Gesamt
+##      ###
+##      gesamtMsg = MSG["PREFIX"].format(En.getRaumname())
+##        
+##      if rtrStatusMsg is not None:
+##        gesamtMsg += ", " + rtrStatusMsg
+##      
+##      if solltemperaturMsg is not None:
+##        gesamtMsg += ", " + solltemperaturMsg
+##      
+##      if isttemperaturMsg is not None:
+##        gesamtMsg += ", " + isttemperaturMsg
+##
+##      if anzLichterAnMsg is not None:
+##        gesamtMsg += ", " + anzLichterAnMsg
+##      elif lichtStatusMsg is not None:
+##        gesamtMsg += ", " + lichtStatusMsg
+##
+##      if not alleTuerenFensterZu:
+##        if anzFensterOffenMsg is not None:
+##          gesamtMsg += ", " + anzFensterOffenMsg
+##
+##        if anzTuerenOffenMsg is not None:
+##          gesamtMsg += ", " + anzTuerenOffenMsg
+##      else:
+##        gesamtMsg += ", " + MSG["ALLE_TUEREN_FENSTER_ZU"]
+##
+##      if gesamtMsg != self.AN[1]:
+##        self.sendToOutput(1, gesamtMsg)
+##
+##    def buildWertText(self, msgName, value):
+##      msg = self.MSG[msgName].format(value)
+##      return msg.replace('.', ',');
+##      
+#####
+##### LOG
+#####
+##    def info(self, msg, *params):
+##      if self.LOG_LEVEL >= 1:
+##        self._log("INFO ", msg, *params)
+##
+##    def debug(self, msg, *params):
+##      if self.LOG_LEVEL >= 2:
+##        self._log("DEBUG", msg, *params)
+##      
+##    def log(self, msg, *params):
+##      self._log("SYS  ", msg, *params)
+##
+##    def _log(self, prefix, msg, *params):
+##      import time
+##      timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+##
+##      if params is not None and len(params) > 0:
+##        msg = msg.format(*params)
+##        
+##      msg = timestamp + " | " + prefix + " | " + self.En.getRaumname() + " | " + msg + '\n'
+##      self.logFile.write(msg)
+##      self.logFile.flush()
+##
+#####      
+##### HS
+#####      
+##    def sendToOutput(self, out, value):
+##      self.AN[out] = value
+##      self.debug("## sendToOutput: " + str(out) + " = '" + str(value) + "'")
+##      out -= 1 ## Intern starten die Ausgänge bei 0 und nicht bei 1
+##      if self.logik.SendIntervall == 0 or time.time() >= self.logik.Ausgang[out][0]:
+##        for iko in self.logik.Ausgang[out][1]:
+##          self.logik.MC.TagList.setWert(FLAG_EIB_LOGIK, iko, value)
+##        if value:
+##          for cmd in self.logik.Ausgang[out][2]:
+##            cmd.execBefehl()
+##        for con in self.logik.Ausgang[out][3]:
+##          self.logik.MC.LogikList.ConnectList.append(con + [ value ])
+##        if self.logik.SendIntervall > 0:
+##          self.logik.Ausgang[out][0] = time.time() + self.logik.SendIntervall
+##        self.logik.OutWert[out] = value
+##
+#####      
+##### EN Wrapper Klasse
+#####      
+##    class En:
+##      def __init__(self, EN, mainClass):
+##        self.EN = EN
+##        self.mainClass = mainClass
+##
+##      def returnNoneIfEmptyString(self, value):
+##        if value != "":
+##          return value
+##        else:
+##          return None
+##        
+##      # Raumname
+##      def getRaumname(self):
+##        return self.EN[1]
+##
+##      def setRaumname(self, value):
+##        self.mainClass.debug("++ setRaumname(value='{0}')", value)
+##        self.EN[1] = value
+##        
+##      # RTR-Status
+##      def getRtrStatus(self):
+##        return self.returnNoneIfEmptyString(self.EN[2])
+##
+##      def setRtrStatus(self, value):
+##        self.mainClass.debug("++ setRtrStatus(value='{0}')", value)
+##        self.EN[2] = value
+##        
+##      # Solltemperatur
+##      def getSolltemperatur(self):
+##        return self.returnNoneIfEmptyString(self.EN[3])
+##
+##      def setSolltemperatur(self, value):
+##        self.mainClass.debug("++ setSolltemperatur(value='{0}')", value)
+##        self.EN[3] = value
+##        
+##      # Isttemperatur
+##      def getIsttemperatur(self):
+##        return self.returnNoneIfEmptyString(self.EN[4])
+##
+##      def setIsttemperatur(self, value):
+##        self.mainClass.debug("++ setIsttemperatur(value='{0}')", value)
+##        self.EN[4] = value
+##        
+##      # Licht Status
+##      def getLichtStatus(self):
+##        return self.returnNoneIfEmptyString(self.EN[5])
+##
+##      def setLichtStatus(self, value):
+##        self.mainClass.debug("++ setLichtStatus(value='{0}')", value)
+##        self.EN[5] = value
+##        
+##      # AnzLichterAn
+##      def getAnzLichterAn(self):
+##        return self.returnNoneIfEmptyString(self.EN[6])
+##
+##      def setAnzLichterAn(self, value):
+##        self.mainClass.debug("++ setAnzLichterAn(value='{0}')", value)
+##        self.EN[6] = value
+##        
+##      # AnzFensterOffen
+##      def getAnzFensterOffen(self):
+##        return self.returnNoneIfEmptyString(self.EN[7])
+##
+##      def setAnzFensterOffen(self, value):
+##        self.mainClass.debug("++ setAnzTuerenOffen(value='{0}')", value)
+##        self.EN[7] = value
+##        
+##      # AnzTuerenOffen
+##      def getAnzTuerenOffen(self):
+##        return self.returnNoneIfEmptyString(self.EN[8])
+##
+##      def setAnzTuerenOffen(self, value):
+##        self.mainClass.debug("++ setAnzTuerenOffen(value='{0}')", value)
+##        self.EN[8] = value
+##        
+##
+
+
+
+
+
+## Klasse auf SN1 
+#5012|abbruch bei bed. (0/1)|bedingung|formel|zeit|pin-ausgang|pin-offset|pin-speicher|pin-neg.ausgang
+5012|1|"EI"|"StatusberichtRaum(locals())"|""|0|0|1|0
+5012|0|"EC[2]"|"SN[1].En.setRtrStatus(EN[2])"|""|0|0|0|0
+5012|0|"EC[3]"|"SN[1].En.setSolltemperatur(EN[3])"|""|0|0|0|0
+5012|0|"EC[4]"|"SN[1].En.setIsttemperatur(EN[4])"|""|0|0|0|0
+5012|0|"EC[5]"|"SN[1].En.setLichtStatus(EN[5])"|""|0|0|0|0
+5012|0|"EC[6]"|"SN[1].En.setAnzLichterAn(EN[6])"|""|0|0|0|0
+5012|0|"EC[7]"|"SN[1].En.setAnzFensterOffen(EN[7])"|""|0|0|0|0
+5012|0|"EC[8]"|"SN[1].En.setAnzTuerenOffen(EN[8])"|""|0|0|0|0
+5012|1|"1"|"SN[1].buildStatusTexte()"|""|0|0|0|0
+
+
