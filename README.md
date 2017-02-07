@@ -1,8 +1,6 @@
 # GiraHS-AmazonEcho
 **Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
-**!!!Beim Update des Logikbausteins von Version V0.2 auf V0.3 geht die JSON-Gerätekonfiguration im Gira Homeserver verloren und muss deshalb im Anschluß neu "hochgeladen" werden!!!**
-
 Ziel dieses Projekts ist die Anbindung von **Amazon-Echo (Alexa)** über den **Gira Homeserver an den KNX Bus** zur Gebäudeautomation.
 Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter **Logikbaustein** und eine dazugehörige **AWS (Amazon Web Service) Lambda-Function**.  
 
@@ -22,9 +20,11 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 * Amazon Developer Konto
 * Amazon Webservice Konto  
 
-Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.
+**Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.**
 
 weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
+
+Diskussion im KNX-User-Forum unter: https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1010815-amazon-echo-logikbaustein
 
 **Änderungen von V0.2 auf V0.3**:
 * zusätzliche Möglichkeit über den Custom-Skill Werte vom KNX-Bus abzufragen
@@ -38,7 +38,7 @@ weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 **Änderungen von V0.1 auf V0.2**:
 * Unterstützung der "Temperature Control Messages" des Amazon "Smart Home Skill API "
   D.h. auf Raumebene kann optional mit dem Schlüsselwort "targetTemperature":"X/Y/Z" eine KNX Gruppenadresse für die   Solltemperaturvorgabe des Raumes angegeben werden
-* auf Raumebene und Geräteebene kann optional mit dem Schlüsselwort "id": die Appliance-ID vorgegeben werden. Der ID darf nur aus Buchstaben und Ziffern bestehen, da Alexa sonst damit nicht klarkommt. Für die Aliasenamen wird zusätzlich automatische eine laufende Nummer angehängt.
+* auf Raumebene und Geräteebene kann optional mit dem Schlüsselwort "id": die Appliance-ID vorgegeben werden. Der ID darf nur aus Buchstaben und Ziffern bestehen, da Alexa sonst damit nicht klarkommt. Für die Aliasenamen wird zusätzlich automatisch eine laufende Nummer angehängt.
 * Log-Ausgabe mit der Möglichkeit diese über die Homeserver Debug-Seite einzusehen
 * Die Fehlerbehandlung sollte besser geworden sein
 * Das Character-Encoding sollte besser gehandhabt werden z.B.: korrekte Darstellung der Umlaute nach dem abspeichern der Konfiguration
