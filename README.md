@@ -38,7 +38,7 @@ Diskussion im KNX-User-Forum unter: https://knx-user-forum.de/forum/%C3%B6ffentl
 **Änderungen von V0.1 auf V0.2**:
 * Unterstützung der "Temperature Control Messages" des Amazon "Smart Home Skill API "
   D.h. auf Raumebene kann optional mit dem Schlüsselwort "targetTemperature":"X/Y/Z" eine KNX Gruppenadresse für die   Solltemperaturvorgabe des Raumes angegeben werden
-* auf Raumebene und Geräteebene kann optional mit dem Schlüsselwort "id": die Appliance-ID vorgegeben werden. Der ID darf nur aus Buchstaben und Ziffern bestehen, da Alexa sonst damit nicht klarkommt. Für die Aliasenamen wird zusätzlich automatische eine laufende Nummer angehängt.
+* auf Raumebene und Geräteebene kann optional mit dem Schlüsselwort "id": die Appliance-ID vorgegeben werden. Der ID darf nur aus Buchstaben und Ziffern bestehen, da Alexa sonst damit nicht klarkommt. Für die Aliasenamen wird zusätzlich automatisch eine laufende Nummer angehängt.
 * Log-Ausgabe mit der Möglichkeit diese über die Homeserver Debug-Seite einzusehen
 * Die Fehlerbehandlung sollte besser geworden sein
 * Das Character-Encoding sollte besser gehandhabt werden z.B.: korrekte Darstellung der Umlaute nach dem abspeichern der Konfiguration
