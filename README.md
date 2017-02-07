@@ -24,7 +24,7 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 
 weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
 
-Diskussion im KNX-User-Forum unter: https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1010815-amazon-echo-logikbaustein?p=1053109
+Diskussion im KNX-User-Forum unter: https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1010815-amazon-echo-logikbaustein
 
 **Änderungen von V0.2 auf V0.3**:
 * zusätzliche Möglichkeit über den Custom-Skill Werte vom KNX-Bus abzufragen
