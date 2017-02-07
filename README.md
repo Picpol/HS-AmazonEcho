@@ -1,8 +1,6 @@
 # GiraHS-AmazonEcho
 **Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
-**!!!Beim Update des Logikbausteins von Version V0.2 auf V0.3 geht die JSON-Gerätekonfiguration im Gira Homeserver verloren und muss deshalb im Anschluß neu "hochgeladen" werden!!!**
-
 Ziel dieses Projekts ist die Anbindung von **Amazon-Echo (Alexa)** über den **Gira Homeserver an den KNX Bus** zur Gebäudeautomation.
 Kern dieser Anbindung ist ein für den Gira Homeserver entwickelter **Logikbaustein** und eine dazugehörige **AWS (Amazon Web Service) Lambda-Function**.  
 
@@ -22,9 +20,11 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 * Amazon Developer Konto
 * Amazon Webservice Konto  
 
-Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.
+**Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.**
 
 weitere Informationen siehe Wiki https://github.com/Picpol/HS-AmazonEcho/wiki
+
+Diskussion im KNX-User-Forum unter: https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1010815-amazon-echo-logikbaustein?p=1053109
 
 **Änderungen von V0.2 auf V0.3**:
 * zusätzliche Möglichkeit über den Custom-Skill Werte vom KNX-Bus abzufragen
