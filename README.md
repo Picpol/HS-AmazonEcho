@@ -1,6 +1,7 @@
 # GiraHS-AmazonEcho
 
 :exclamation:**Jetzt gibt es die "Alexa-Gira HomeServer" Anbindung von mir auch als fertiges Produkt.  
+  
 Neue Features:**  
 * einfach als Skill zu aktivieren, es muss nur noch der Logikbaustein installiert werden
 * arbeitet ohne Portfreigabe (somit auch kein SSL-Zertifikat notwendig)
@@ -8,6 +9,7 @@ Neue Features:**
 
 **Weitere Informationen unter http://alexa-knx.de :exclamation:**
 
+  
 **Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
 Ziel dieses Projekts ist die Anbindung von **Amazon-Echo (Alexa)** über den **Gira Homeserver an den KNX Bus** zur Gebäudeautomation.
