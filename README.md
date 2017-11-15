@@ -1,5 +1,3 @@
-# GiraHS-AmazonEcho
-
 :exclamation:**Jetzt gibt es die "Alexa-Gira HomeServer" Anbindung von mir auch als fertiges Produkt.  
   
 Neue Features:**  
@@ -9,6 +7,7 @@ Neue Features:**
 
 **Weitere Informationen unter http://alexa-knx.de :exclamation:**
 
+# GiraHS-AmazonEcho
   
 **Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
