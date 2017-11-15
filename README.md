@@ -1,4 +1,13 @@
 # GiraHS-AmazonEcho
+
+:exclamation:**Jetzt gibt es die "Alexa-Gira HomeServer" Anbindung von mir auch als fertiges Produkt.  
+Neue Features:**  
+* einfach als Skill zu aktivieren, es muss nur noch der Logikbaustein installiert werden
+* arbeitet ohne Portfreigabe (somit auch kein SSL-Zertifikat notwendig)
+* überarbeitete und verbesserte Funktionalität  
+
+**Weitere Informationen unter http://alexa-knx.de :exclamation:**
+
 **Achtung: Verwendung erfolgt auf eigenes Risiko!**  
 
 Ziel dieses Projekts ist die Anbindung von **Amazon-Echo (Alexa)** über den **Gira Homeserver an den KNX Bus** zur Gebäudeautomation.
@@ -19,8 +28,6 @@ Der Custom-Skill muss vor dem gewünschten Sprachkomando über ein selbst festzu
 * Amazon Konto
 * Amazon Developer Konto
 * Amazon Webservice Konto  
-
-**Falls jemand das Projekt finanziell unterstützen möchte, kann er das gerne über Paypal https://www.paypal.me/Picpol tun.**
 
 weitere Informationen siehe **Wiki: https://github.com/Picpol/HS-AmazonEcho/wiki**
 
