@@ -1,6 +1,6 @@
-:exclamation:**Jetzt gibt es die "Alexa-Gira HomeServer" Anbindung von mir auch als fertiges Produkt.  
+:exclamation: **Jetzt gibt es die "Alexa-Gira HomeServer" Anbindung von mir auch als fertiges Produkt.**  
   
-Neue Features:**  
+**Neue Features:**  
 * einfach als Skill zu aktivieren, es muss nur noch der Logikbaustein installiert werden
 * arbeitet ohne Portfreigabe (somit auch kein SSL-Zertifikat notwendig)
 * überarbeitete und verbesserte Funktionalität  
